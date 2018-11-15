@@ -1,0 +1,80 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+Assembler/*.o
+Assembler/*.a
+Assembler/*.so
+
+# Folders
+Assembler/_obj
+Assembler/_test
+
+# Architecture specific extensions/prefixes
+Assembler/*.[568vq]
+Assembler/[568vq].out
+
+Assembler/*.cgo1.go
+Assembler/*.cgo2.c
+Assembler/_cgo_defun.c
+Assembler/_cgo_gotypes.go
+Assembler/_cgo_export.*
+
+Assembler/_testmain.go
+
+Assembler/*.exe
+Assembler/*.test
+Assembler/*.prof
+
+Assembler/Assembler
+
+
+# Prerequisites
+C/*.d
+
+# Object files
+C/*.o
+C/*.ko
+C/*.obj
+C/*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+C/*.gch
+C/*.pch
+
+# Libraries
+C/*.lib
+C/*.a
+C/*.la
+C/*.lo
+
+# Shared objects (inc. Windows DLLs)
+C/*.dll
+C/*.so
+C/*.so.*
+C/*.dylib
+
+# Executables
+C/*.exe
+C/*.out
+C/*.app
+C/*.i*86
+C/*.x86_64
+C/*.hex
+
+# Debug files
+C/*.dSYM/
+C/*.su
+C/*.idb
+C/*.pdb
+
+# Kernel Module Compile Results
+C/*.mod*
+C/*.cmd
+C/.tmp_versions/
+C/modules.order
+C/Module.symvers
+C/Mkfile.old
+C/dkms.conf
