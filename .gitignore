@@ -1,3 +1,25 @@
+# Compiled Object files
+Assembler/*.slo
+Assembler/*.lo
+Assembler/*.o
+Assembler/*.obj
+
+# Compiled Dynamic libraries
+Assembler/*.so
+Assembler/*.dylib
+Assembler/*.dll
+
+# Compiled Static libraries
+Assembler/*.lai
+Assembler/*.la
+Assembler/*.a
+Assembler/*.lib
+
+# Executables
+Assembler/*.exe
+Assembler/*.out
+Assembler/*.app
+
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 Assembler/*.o
 Assembler/*.a
