@@ -3,32 +3,32 @@
 #include <time.h>
 #include <unistd.h>
 
-void reloj();
-void temporizador(int num);
+void clock();
+void timer(int num);
 int main(void) 
 {
-	int numero;
-	printf("Ingrese una opcion: \n1.-Reloj\n2.-Temporizador\n"); 
-	scanf("%d",&numero); 
-	if (numero==1){
-		reloj();
+	int option;
+	printf("Select an option: \n1.-Clock\n2.-Timer\n\n"); //Print out menu
+	scanf("%d",&option); 
+	if (option==1){
+		clock();
 	}
 	else{
-		int minuto;
-		printf("Ingrese minutos: "); 
-		scanf("%d",&minuto);
-		temporizador(minuto);
+		int minute;
+		printf("Input the amount of minutes to count: \n"); 
+		scanf("%d",&minute);
+		timer(minute);
 	}
    return EXIT_SUCCESS; 
 }
 
-void temporizador(int min){
+void timer(int min){	//timer function
 	int s;
 	int m;
 	int h;
 	s=m=h=0;
 
-	 while (m < min){ 
+	 while (m < min){ 	
       		if (s == 60){ 
          		m++; 
          		s = 0; 
@@ -39,13 +39,13 @@ void temporizador(int min){
         	 	m = 0; 
       		} 
       
-      	printf("%02d:%02d:%02d\n", h, m, s); 
-      	sleep(1.5); 
-      	s++; 
+      		printf("%02d:%02d:%02d\n", h, m, s); 
+      		sleep(1.5); 
+      		s++; 
    	} 
 }
 
-void reloj(){
+void clock(){    	//clock function
 	int s;
         int m;
         int h;
@@ -55,8 +55,8 @@ void reloj(){
                 	for(s=0; s<60; s++){
         			printf("%02d:%02d:%02d\n", h, m, s); 
         			sleep(1.5); 
-        }
-        }        
+        		}
+        	}        
         }	
 } 
        
