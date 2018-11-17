@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+
 #include <unistd.h>
 
-void clock();
+void myclock();
 void timer(int num);
 int main(void) 
 {
@@ -11,7 +11,7 @@ int main(void)
 	printf("Select an option: \n1.-Clock\n2.-Timer\n\n"); //Print out menu
 	scanf("%d",&option); 
 	if (option==1){
-		clock();
+		myclock();
 	}
 	else{
 		int minute;
@@ -42,10 +42,11 @@ void timer(int min){	//timer function
       		printf("%02d:%02d:%02d\n", h, m, s); 
       		sleep(1.5); 
       		s++; 
-   	} 
+   	}
+	printf("Timer has been completed!!\n");
 }
 
-void clock(){    	//clock function
+void myclock(){    	//clock function
 	int s;
         int m;
         int h;
